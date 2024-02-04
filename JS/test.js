@@ -1135,7 +1135,7 @@
     
     // calculateTotal(3,4,5,6,7,8,9);
 
-    //*REST OPERATOR
+    //*8 REST OPERATOR
 
     //~ So basically rest parameter collects all the remaining arguments and forms an array containing all of them as the name suggests rest parameter.
 
@@ -1155,7 +1155,9 @@
 
   // console.log(calculateTotal(12,34,56,78,99,34,22,33,44,)); 
 
-  
+  //*Closures 
+
+
 
 
 
