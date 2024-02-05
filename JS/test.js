@@ -708,6 +708,10 @@
 //   }
 // };
 
+//~ Destructuring Object is nothing but assigning properties of object to a variable
+
+// let {name,contact}= person;
+
 //~we can use ...rest to include all the object it will destructure and iterate through all the rest of the object 
   // let{name, ...rest}= person;
   // console.log(name, rest);
@@ -1097,6 +1101,33 @@
   //*6. Reduce functionality 
 
   //Todo-- Connect with ARUSH to understand
+  //~reduce function is mostly used in place where we have to calculate, like total cart value
+
+  let cart=[
+    {
+      price:200,
+      quantity:2,
+    },
+    {
+      price:200,
+      quantity:2,
+    },
+    {
+      price:200,
+      quantity:2,
+    }
+  ];
+
+  const cartValue=cart.reduce((curr,number)=>{
+    curr=curr+number.price*number.quantity;
+    return curr;
+  },0)
+  console.log(cartValue);
+  //~For reference so that at time of revision you can understand reduce easily by seeing the map function
+  // const cartValue= cart.map((number)=>{
+  //  return number.price;
+  // })
+  // console.log(cartValue);
 
   //*7 Argument Object
 
@@ -1154,6 +1185,11 @@
   // }
 
   // console.log(calculateTotal(12,34,56,78,99,34,22,33,44,)); 
+
+  //*Rest Vs Spread
+
+  
+  
 
   //*Closures 
 
